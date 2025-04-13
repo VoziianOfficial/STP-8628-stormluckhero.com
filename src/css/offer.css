@@ -1,0 +1,70 @@
+.offer {
+  background-image: url('../img/offer/heropicMob\ 1.jpg');
+  background-repeat: no-repeat;
+  width: 375px;
+  height: 764px;
+  margin-top: 60px;
+}
+
+.welcome-text {
+  font-family: "Grape Nuts", sans-serif;
+  font-size: 32px;
+}
+
+.offer-title {
+  font-family: "Bungee Inline", sans-serif;
+  font-size: 36px;
+  letter-spacing: -0.04em;
+  margin-bottom: 24px;
+}
+
+.hero-span {
+  color: #b42d2d;
+}
+
+.offer-text-info {
+  font-family: "Grape Nuts", sans-serif;
+  font-size: 23px;
+  font-style: italic;
+  text-align: center;
+  color: #070d12;
+  text-shadow:
+    0.5px 0 currentColor,
+    -0.5px 0 currentColor,
+    0 0.5px currentColor,
+    0 -0.5px currentColor;
+}
+
+.text-container {
+  padding-top: 24px;
+  margin-left: 16px;
+  color: #070d12;
+  font-weight: 400;
+  margin-bottom: 246px;
+}
+
+.offer-text {
+  font-family: "Bungee Inline", sans-serif;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+
+.offer-text-1 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.offer-text-2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.offer-text-3 {
+  font-size: 28px;
+}
+
+.color {
+  color: #b42d2d;
+}

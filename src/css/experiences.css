@@ -1,0 +1,62 @@
+.experiences {
+  background-color: #070d12;
+  padding-top: 40px;
+}
+
+.experiences-inner {
+  padding-left: 16px;
+}
+
+.experiences-title {
+  display: flex;
+  justify-content: center;
+  font-family: "Grape Nuts", sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+  margin-bottom: 24px;
+}
+
+.experiences-span {
+  font-family: "Bungee Inline", sans-serif;
+  color: #b42d2d;
+  margin-left: 16px;
+}
+
+.experiences-title-h3 {
+  font-family: "Bungee Inline", sans-serif;
+  color: #b42d2d;
+  font-weight: 400;
+  font-size: 24px;
+  width: 300px;
+}
+
+.experiences-swiper-text {
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  width: 300px;
+}
+
+.swiper-pagination-gallery {
+  position: relative;
+  height: 8px;
+  background-color: #1e1e1e;
+  border-radius: 4px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.swiper-pagination-progressbar-fill {
+  background-color: #b42d2d;
+  /* Красный как на скрине */
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+
+
+.swiper-img {
+  max-width: 300px;
+}

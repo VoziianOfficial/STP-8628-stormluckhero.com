@@ -1,5 +1,5 @@
 import { header } from './js/header.js';
-import { offer } from './js/offer.js';
+import { experiences } from './js/experiences.js';
 
 header();
-offer();
+experiences();
