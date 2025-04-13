@@ -1,0 +1,49 @@
+/* styles.css */
+@import './reset.css';
+@import './header.css';
+@import './experiences.css';
+@import './experts.css';
+@import './footer.css';
+@import './getReady.css';
+@import './offer.css';
+@import './stories.css';
+@import './whyUs.css';
+
+
+:root {
+  background-color: #112f3b;
+  --font-family: "Play", sans-serif;
+  --second-family: "Bungee Inline", sans-serif;
+  --third-family: "Grape Nuts", sans-serif;
+  --font3: "Rubik", sans-serif;
+  --font4: "Lexend", sans-serif;
+  color: #fffce4;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.container {
+  max-width: 375px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.header-container {
+  max-width: 375px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+
+  .header-container {
+    max-width: 1440px;
+  }
+
+}
