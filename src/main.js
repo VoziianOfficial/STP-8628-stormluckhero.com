@@ -1,5 +1,6 @@
 import { header } from './js/header.js';
-import { experiences } from './js/experiences.js';
+import { initSwiper } from './js/experiences.js';
 
 header();
-experiences();
+// Инициализация Swiper
+initSwiper();
