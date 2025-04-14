@@ -23,12 +23,15 @@
   color: #d4991a;
 }
 
-.img-wrapper {}
-
 .experts-slide {
   width: 375px;
   padding: 0px 0px 8px 0px;
   background: #070d12;
+  margin-bottom: 16px;
+}
+
+.experts-slide:last-of-type {
+  margin-bottom: 0;
 }
 
 .experts-img {
