@@ -2,11 +2,6 @@
 .experiences {
   background-color: #070d12;
   padding: 40px 0;
-  width: 100%;
-}
-
-.experiences-inner {
-  padding-left: 16px;
 }
 
 .experiences-title {
@@ -21,7 +16,7 @@
 .experiences-span {
   font-family: "Bungee Inline", sans-serif;
   color: #b42d2d;
-  margin-left: 16px;
+
 }
 
 .experiences-title-h3 {
@@ -30,6 +25,7 @@
   font-weight: 400;
   font-size: 24px;
   width: 300px;
+  margin-bottom: 16px;
 }
 
 .experiences-swiper-text {
@@ -50,16 +46,33 @@
   transition-timing-function: ease;
 }
 
+/* Скрываем все слайды по умолчанию */
+.swiper-slide {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease;
+}
 
+/* Показываем активный слайд */
+.swiper-slide-active {
+  opacity: 1;
+  visibility: visible;
+  margin-left: 0 !important;
+}
+
+/* Показываем следующий слайд (виден край) */
+.swiper-slide-next {
+  opacity: 1;
+  visibility: visible;
+}
 
 .swiper-img {
-  width: 300px;
   margin-bottom: 24px;
 }
 
 .custom-pagination {
   display: flex;
-  width: 300px;
+  max-width: 300px;
   height: 16px;
   justify-content: flex-start;
   margin-top: 20px;
@@ -67,17 +80,20 @@
   border: 1px solid #f0f0f0;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   overflow: hidden;
+  margin-left: 38px;
 }
 
+/* Прогресс-бары */
 .custom-pagination .bar {
   background-color: #b42d2d;
   height: 100%;
-  width: 0%;
-  /* Стартовая ширина для каждого прогресса */
-  transition: width 0.4s ease;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+  flex: 1;
+  margin-right: 2px;
 }
 
-.custom-pagination .bar.active {
-  width: 20%;
-  /* Прогресс бар будет увеличиваться по ширине на 20% на каждый слайд */
+.swiper-wrapper {
+  margin-right: 0 auto;
 }

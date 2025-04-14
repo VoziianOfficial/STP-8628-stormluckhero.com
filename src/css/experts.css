@@ -1,0 +1,61 @@
+.experts {
+  margin-bottom: 40px;
+}
+
+.text-wrapper-expert {
+  display: flex;
+  padding: 40px 61px 24px 61px;
+  flex-direction: column
+}
+
+
+.experts-text-paragraph {
+  font-weight: 400;
+  font-size: 34px;
+  font-family: "Grape Nuts", sans-serif;
+  ;
+}
+
+.experts-title {
+  font-weight: 400;
+  font-size: 34px;
+  font-family: "Bungee Inline", sans-serif;
+  color: #d4991a;
+}
+
+.img-wrapper {}
+
+.experts-slide {
+  width: 375px;
+  padding: 0px 0px 8px 0px;
+  background: #070d12;
+}
+
+.experts-img {
+  width: 340px;
+  height: 204px;
+  margin-bottom: 16px;
+}
+
+.experts-title-h3 {
+  font-weight: 400;
+  font-size: 28px;
+  text-align: center;
+  color: #d4991a;
+  font-family: "Bungee Inline", sans-serif;
+  margin-bottom: 24px;
+}
+
+.text-img-wrap {
+  padding: 0px 24px;
+}
+
+.experts-swiper-text {
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 130%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #f0f0f0
+}
