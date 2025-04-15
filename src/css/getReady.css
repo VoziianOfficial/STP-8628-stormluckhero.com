@@ -1,0 +1,35 @@
+.getReady-inner {
+  background-color: #070d12;
+  padding-bottom: 40px;
+}
+
+.getReady-title {
+  font-family: "Grape Nuts", sans-serif;
+  color: #f0f0f0;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 130%;
+  padding: 40px 51px 24px 52px;
+
+}
+
+.getReady-span {
+  font-family: "Bungee Inline", sans-serif;
+  color: #b42d2d;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 130%;
+}
+
+.getReady {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 24px;
+}
+
+.getReady-img {
+  width: 343px;
+  height: 180px;
+}
