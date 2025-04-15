@@ -1,0 +1,71 @@
+.stories-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stories-title {
+  font-family: "Grape Nuts",
+    sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 130%;
+  color: #f0f0f0;
+  text-align: center;
+  padding: 43px 52px 20px 53px;
+}
+
+.stories-span {
+  color: #d4991a;
+  font-family: "Bungee Inline", sans-serif;
+}
+
+.stories-img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.stories-card {
+  background-color: #070d12;
+  width: 343px;
+  margin-bottom: 16px;
+}
+
+.stories-content {
+  width: 343px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+}
+
+.stories-header {
+  display: flex;
+  align-items: center;
+  width: 240px;
+  gap: 10px;
+  margin-bottom: 14px;
+
+}
+
+.stories-number {
+  font-family: "Bungee Inline", sans-serif;
+  font-size: 54px;
+  color: #ffffff;
+}
+
+.stories-heading {
+  font-family: "Bungee Inline", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #d4991a;
+}
+
+.stories-description {
+  font-family: "Play", sans-serif;
+  font-size: 18px;
+  color: #f0f0f0;
+  line-height: 130%;
+  text-align: center;
+  max-width: 300px;
+}
