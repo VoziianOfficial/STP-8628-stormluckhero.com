@@ -113,3 +113,86 @@
   color: #f0f0f0;
   gap: 20px;
 }
+
+.desktop-menu {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    background-color: #070d12;
+    padding: 12px 24px;
+    max-width: 1440px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .burger_menu-js {
+    display: none;
+  }
+
+  .mobile-nav-js {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+  }
+
+  .desktop-menu a {
+    position: relative;
+    padding-bottom: 10px;
+    padding-left: 20px;
+  }
+
+  .desktop-menu a:active::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 4px;
+    background-color: #b42d2d;
+  }
+
+  .desktop-menu a:hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 35%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #b42d2d;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+
+
+
+
+  /* Убираем точку при клике */
+  .desktop-menu a:active::before {
+    opacity: 0;
+  }
+
+
+}
