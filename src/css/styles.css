@@ -1,6 +1,7 @@
 /* styles.css */
 @import './reset.css';
 @import './header.css';
+@import './home.css';
 @import './experiences.css';
 @import './experts.css';
 @import './footer.css';

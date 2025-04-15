@@ -1,70 +1,95 @@
 .offer {
-  background-image: url('../img/offer/heropicMob\ 1.jpg');
-  background-repeat: no-repeat;
-  width: 375px;
-  height: 764px;
-  margin-top: 60px;
-}
-
-.welcome-text {
-  font-family: "Grape Nuts", sans-serif;
-  font-size: 32px;
+  background-color: #070d12;
+  padding: 40px 0;
 }
 
 .offer-title {
-  font-family: "Bungee Inline", sans-serif;
-  font-size: 36px;
-  letter-spacing: -0.04em;
+  display: flex;
+  justify-content: center;
+  font-family: "Grape Nuts", sans-serif;
+  font-weight: 400;
+  font-size: 34px;
   margin-bottom: 24px;
 }
 
-.hero-span {
-  color: #b42d2d;
-}
-
-.offer-text-info {
-  font-family: "Grape Nuts", sans-serif;
-  font-size: 23px;
-  font-style: italic;
-  text-align: center;
-  color: #070d12;
-  text-shadow:
-    0.5px 0 currentColor,
-    -0.5px 0 currentColor,
-    0 0.5px currentColor,
-    0 -0.5px currentColor;
-}
-
-.text-container {
-  padding-top: 24px;
-  margin-left: 16px;
-  color: #070d12;
-  font-weight: 400;
-  margin-bottom: 246px;
-}
-
-.offer-text {
+.offer-span {
   font-family: "Bungee Inline", sans-serif;
-  font-weight: 400;
-  line-height: 100%;
-  letter-spacing: -0.04em;
-  text-align: center;
-}
-
-.offer-text-1 {
-  font-size: 20px;
-  margin-bottom: 16px;
-}
-
-.offer-text-2 {
-  font-size: 24px;
-  margin-bottom: 16px;
-}
-
-.offer-text-3 {
-  font-size: 28px;
-}
-
-.color {
   color: #b42d2d;
+
+}
+
+.offer-title-h3 {
+  font-family: "Bungee Inline", sans-serif;
+  color: #b42d2d;
+  font-weight: 400;
+  font-size: 24px;
+  width: 300px;
+  margin-bottom: 16px;
+}
+
+.offer-swiper-text {
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  width: 300px;
+}
+
+
+.swiper-gallery {
+  overflow: visible;
+}
+
+.swiper-wrapper {
+  display: flex;
+  transition-timing-function: ease;
+}
+
+.swiper-slide {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease;
+}
+
+.swiper-slide-active {
+  opacity: 1;
+  visibility: visible;
+  margin-left: 0 !important;
+}
+
+.swiper-slide-next {
+  opacity: 1;
+  visibility: visible;
+}
+
+.swiper-img {
+  margin-bottom: 24px;
+}
+
+.custom-pagination {
+  display: flex;
+  max-width: 300px;
+  height: 16px;
+  justify-content: flex-start;
+  margin-top: 20px;
+  background-color: transparent;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  margin-left: 38px;
+}
+
+
+.custom-pagination .bar {
+  background-color: #b42d2d;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+  flex: 1;
+  margin-right: 2px;
+}
+
+.swiper-wrapper {
+  margin-right: 0 auto;
 }

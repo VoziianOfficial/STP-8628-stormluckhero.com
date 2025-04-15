@@ -1,67 +1,71 @@
-.whyUs {
-  background-color: #070d12;
-}
-
-.whyUs-title {
-  padding: 40px 33px 24px 33px;
-  font-family: "Grape Nuts", sans-serif;
-  font-weight: 400;
-  font-size: 34px;
-}
-
-.whyUs-span {
-  font-weight: 400;
-  font-size: 34px;
-  font-family: "Bungee Inline", sans-serif;
-  color: #b42d2d;
-}
-
-.img-container {
+.whyUs-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
-  padding-bottom: 40px;
 }
 
-.whyUs-slide {
-  border: 1px solid #f0f0f0;
-  padding: 16px;
-  width: 343px;
-  height: 554px;
+.whyUs-title {
+  font-family: "Grape Nuts",
+    sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 130%;
+  color: #f0f0f0;
+  text-align: center;
+  padding: 43px 52px 20px 53px;
+}
+
+.whyUs-span {
+  color: #d4991a;
+  font-family: "Bungee Inline", sans-serif;
 }
 
 .whyUs-img {
-  width: 311px;
-  height: 373px;
+  max-width: 100%;
+  margin-bottom: 20px;
 }
 
-.text-img-wrapper {
-  margin-top: 16px;
+.whyUs-card {
+  background-color: #070d12;
+  width: 343px;
+  margin-bottom: 16px;
 }
 
-.whyUs-title-h3 {
+.whyUs-content {
+  width: 343px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+}
+
+.whyUs-header {
+  display: flex;
+  align-items: center;
+  width: 240px;
+  gap: 10px;
+  margin-bottom: 14px;
+
+}
+
+.whyUs-number {
+  font-family: "Bungee Inline", sans-serif;
+  font-size: 54px;
+  color: #ffffff;
+}
+
+.whyUs-heading {
+  font-family: "Bungee Inline", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #d4991a;
+}
+
+.whyUs-description {
   font-family: "Play", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 150%;
-  text-align: center;
-  color: #b42d2d;
-}
-
-.whyUs-swiper-text {
-  font-family: "Grape Nuts", sans-serif;
-  font-weight: 400;
-  font-size: 19px;
-  line-height: 150%;
-  text-align: center;
+  font-size: 18px;
   color: #f0f0f0;
-}
-
-.whyUs-swiper-text2 {
-  font-family: "Play", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
+  line-height: 130%;
   text-align: center;
+  max-width: 300px;
 }
