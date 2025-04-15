@@ -1,5 +1,9 @@
-.stories-inner {
+.stories-bg {
   background-color: #070d12;
+  width: 100%;
+}
+
+.stories-inner {
   padding-bottom: 40px;
 }
 
@@ -10,7 +14,6 @@
   font-size: 34px;
   line-height: 130%;
   padding: 40px 51px 24px 52px;
-
 }
 
 .stories-span {
