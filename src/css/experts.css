@@ -71,3 +71,15 @@
   text-align: center;
   color: #f0f0f0
 }
+
+.experts-wrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+
+}
+
+.img-size {
+  width: 375px;
+}

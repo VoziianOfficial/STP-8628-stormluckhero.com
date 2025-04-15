@@ -1,4 +1,3 @@
-/* Общие стили для галереи */
 .experiences {
   background-color: #070d12;
   padding: 40px 0;
@@ -36,7 +35,7 @@
   width: 300px;
 }
 
-/* Стиль для swiper-галереи */
+
 .swiper-gallery {
   overflow: visible;
 }
@@ -46,21 +45,18 @@
   transition-timing-function: ease;
 }
 
-/* Скрываем все слайды по умолчанию */
 .swiper-slide {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease;
 }
 
-/* Показываем активный слайд */
 .swiper-slide-active {
   opacity: 1;
   visibility: visible;
   margin-left: 0 !important;
 }
 
-/* Показываем следующий слайд (виден край) */
 .swiper-slide-next {
   opacity: 1;
   visibility: visible;
