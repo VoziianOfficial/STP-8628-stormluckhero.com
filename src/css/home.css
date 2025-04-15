@@ -1,5 +1,5 @@
 .home {
-  background-image: url('../img/offer/heropicMob\ 1.jpg');
+  background-image: url('../img/home/heropicMob\ 1.jpg');
   background-repeat: no-repeat;
   width: 375px;
   height: 764px;
@@ -77,4 +77,79 @@
 
 .color {
   color: #b42d2d;
+}
+
+
+
+
+@media screen and (min-width: 1440px) {
+  .home {
+    background-image: url('../img/home/heropic-desk.jpg');
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 845px;
+  }
+
+  .welcome-text {
+    padding-top: 90px;
+    margin-left: 80px;
+    font-size: 44px;
+  }
+
+
+  .home-title {
+    font-family: "Bungee Inline", sans-serif;
+    font-size: 74px;
+    margin-left: 80px;
+  }
+
+  .home-text-info {
+    font-family: "Grape Nuts", sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    color: #070d12;
+    width: 739px;
+    text-align: start;
+    margin-left: 80px;
+
+  }
+
+  .text-container {
+    padding-top: 24px;
+    margin-left: 16px;
+    color: #070d12;
+    font-weight: 400;
+    margin-bottom: 120px;
+  }
+
+
+  .home-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .home-text-1 {
+    font-size: 30px;
+    margin-bottom: 54px;
+  }
+
+
+  .home-text-2 {
+    font-size: 38px;
+  }
+
+
+  .home-text-3 {
+    font-size: 48px;
+  }
+
+  .home-text-wrap {
+    margin-right: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+  }
 }
