@@ -65,3 +65,57 @@
   line-height: 150%;
   text-align: center;
 }
+
+@media screen and (min-width: 1440px) {
+  .section {
+    box-sizing: unset;
+  }
+
+
+  .img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .experts-inner {
+    width: 1440px;
+  }
+
+  .experts-slide {
+    padding: 5;
+  }
+
+  .img-container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .experts-img {
+    width: 240px;
+    height: 298px;
+  }
+
+  .experts-slide {
+    width: 280px;
+    height: 485px;
+  }
+
+  .experts-title-h3 {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 130%;
+    text-align: center;
+    text-shadow: 0.7px 0 0 currentColor, -0.7px 0 0 currentColor;
+  }
+
+  .experts-title {
+    font-size: 44px;
+    margin-left: 50px;
+  }
+
+  .experts-span {
+    font-size: 44px;
+  }
+}

@@ -153,6 +153,8 @@
     display: flex;
     justify-content: center;
     gap: 80px;
+    font-family: "Play", sans-serif;
+    font-size: 16px;
   }
 
   .desktop-menu a {

@@ -97,3 +97,75 @@
 .img-size {
   width: 375px;
 }
+
+@media screen and (min-width: 1440px) {
+  .text-wrapper-experience {
+    display: flex;
+    width: 522px;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .experience-text-paragraph {
+    font-size: 44px;
+  }
+
+
+  .experience-title {
+    font-size: 44px;
+  }
+
+  .img-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .experience-wrap {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .experience-img {
+    width: 400px;
+    height: 240px;
+  }
+
+  .experience-slide {
+    height: 240px;
+    width: 1440px;
+  }
+
+  .text-img-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin-left: 48px;
+    margin-top: 42px;
+    width: 100%;
+    max-width: 900px;
+  }
+
+  .experience-title-h3,
+  .experience-swiper-text {
+    text-align: left;
+    margin: 0;
+    width: 100%;
+    font-size: 32px;
+
+  }
+
+  .img-size {
+    width: 400px;
+    height: 240px;
+  }
+
+  .reverse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .experience-swiper-text {
+    font-size: 28px;
+  }
+}
