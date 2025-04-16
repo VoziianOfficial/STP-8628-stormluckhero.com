@@ -1,6 +1,5 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
-import 'swiper/css/pagination';
 
 export const initSwiper = () => {
   let gallerySwiper = null;
@@ -24,44 +23,48 @@ export const initSwiper = () => {
   };
 
   const initGallerySwiper = () => {
-    const isMobile = window.innerWidth < 1200;
-
-    if (!gallerySwiper) {
-      gallerySwiper = new Swiper('.swiper-gallery', {
-        slidesPerView: isMobile ? 1.2 : 'auto',
-        spaceBetween: isMobile ? 16 : 20,
-        grabCursor: true,
-        centeredSlides: isMobile,
-        loop: true,
-        speed: 800,
-        simulateTouch: true,
-        touchRatio: 1,
-        mousewheel: {
-          sensitivity: 0.5,
-        },
-        keyboard: {
-          enabled: true,
-          onlyInViewport: true,
-        },
-        pagination: {
-          el: '.swiper-pagination-gallery',
-          type: 'bullets',
-          clickable: true,
-        },
-        on: {
-          init(swiper) {
-            updateProgressBar(swiper);
-          },
-          slideChange(swiper) {
-            updateProgressBar(swiper);
-          },
-        },
-      });
-    } else {
-      gallerySwiper.params.slidesPerView = isMobile ? 1.2 : 'auto';
-      gallerySwiper.params.spaceBetween = isMobile ? 16 : 20;
-      gallerySwiper.update();
+    if (gallerySwiper) {
+      gallerySwiper.destroy(true, true);
+      gallerySwiper = null;
     }
+
+    gallerySwiper = new Swiper('.swiper-gallery', {
+      slidesPerView: 1.2,  // Изначально показываем 1.2 слайда
+      spaceBetween: 16,    // Промежуток между слайдами
+      grabCursor: true,
+      centeredSlides: true,
+      loop: true,
+      speed: 800,
+      simulateTouch: true,
+      touchRatio: 1,
+      mousewheel: {
+        sensitivity: 0.5,
+      },
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+      },
+      pagination: false,   // Отключаем стандартную пагинацию
+      navigation: {
+        nextEl: '.swiper-button-next',  // Стрелка "вперед"
+        prevEl: '.swiper-button-prev',  // Стрелка "назад"
+      },
+      breakpoints: {
+        1200: {
+          slidesPerView: 2.5,  // Показываем 2.5 слайда на экранах от 1200px
+          spaceBetween: 0,    // Промежуток между слайдами
+          centeredSlides: false,
+        },
+      },
+      on: {
+        init(swiper) {
+          updateProgressBar(swiper);
+        },
+        slideChange(swiper) {
+          updateProgressBar(swiper);
+        },
+      },
+    });
   };
 
   initGallerySwiper();
