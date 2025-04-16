@@ -13,11 +13,12 @@ export const initSwiper = () => {
       bar.classList.toggle('active', index === swiper.realIndex);
     });
 
+    bars.forEach((bar) => {
+      bar.style.transform = 'scaleX(0)';
+    });
+
     const activeBar = bars[swiper.realIndex];
     if (activeBar) {
-      bars.forEach((bar) => {
-        bar.style.transform = 'scaleX(0)';
-      });
       activeBar.style.transform = 'scaleX(1)';
     }
   };
@@ -29,8 +30,8 @@ export const initSwiper = () => {
     }
 
     gallerySwiper = new Swiper('.swiper-gallery', {
-      slidesPerView: 1.2,  // Изначально показываем 1.2 слайда
-      spaceBetween: 16,    // Промежуток между слайдами
+      slidesPerView: 1.2,
+      spaceBetween: 13,
       grabCursor: true,
       centeredSlides: true,
       loop: true,
@@ -44,15 +45,15 @@ export const initSwiper = () => {
         enabled: true,
         onlyInViewport: true,
       },
-      pagination: false,   // Отключаем стандартную пагинацию
+      pagination: false,
       navigation: {
-        nextEl: '.swiper-button-next',  // Стрелка "вперед"
-        prevEl: '.swiper-button-prev',  // Стрелка "назад"
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
       breakpoints: {
-        1200: {
-          slidesPerView: 2.5,  // Показываем 2.5 слайда на экранах от 1200px
-          spaceBetween: 0,    // Промежуток между слайдами
+        1440: {
+          slidesPerView: 2.5,
+          spaceBetween: 10,
           centeredSlides: false,
         },
       },

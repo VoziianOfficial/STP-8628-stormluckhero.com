@@ -1,8 +1,18 @@
-<svg width="0" height="0" class="hidden">
-  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 38" id="chevron-left">
-    <path d="M20 36L2 19L20 2" stroke="#F0F0F0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
-  </symbol>
-  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 38" id="chevron-right">
-    <path d="M2 36L20 19L2 2" stroke="#F0F0F0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
-  </symbol>
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <symbol id="icon-arrow-narrow-left" viewBox="0 0 32 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2"
+        d="M26.667 16h-21.333"></path>
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2"
+        d="M13.333 24l-8-8 8-8"></path>
+    </symbol>
+    <symbol id="icon-arrow-narrow-right" viewBox="0 0 32 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M5.333 16h21.333">
+      </path>
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M18.667 8l8 8-8 8">
+      </path>
+    </symbol>
+    </symbol>
+  </defs>
 </svg>
