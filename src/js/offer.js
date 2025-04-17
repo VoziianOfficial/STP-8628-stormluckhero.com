@@ -33,7 +33,7 @@ export const initSwiper = () => {
       slidesPerView: 1.2,
       spaceBetween: 13,
       grabCursor: true,
-      centeredSlides: true,
+      centeredSlides: false,
       loop: true,
       speed: 800,
       simulateTouch: true,
