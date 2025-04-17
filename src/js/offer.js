@@ -53,10 +53,11 @@ export const initSwiper = () => {
       breakpoints: {
         1440: {
           slidesPerView: 2.5,
-          spaceBetween: 10,
+          spaceBetween: 20,
           centeredSlides: false,
         },
       },
+
       on: {
         init(swiper) {
           updateProgressBar(swiper);
