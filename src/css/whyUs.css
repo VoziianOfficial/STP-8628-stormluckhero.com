@@ -69,3 +69,16 @@
   text-align: center;
   max-width: 300px;
 }
+
+@media screen and (min-width: 1440px) {
+  .whyUs-img {
+    display: none;
+  }
+
+  .back-wrapper {
+    width: 1440px;
+    background-image: url(../img/whyUs/arrow-big.jpg);
+  }
+
+
+}
