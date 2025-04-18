@@ -1,5 +1,5 @@
 import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
+
 
 export const initSwiper = () => {
   let gallerySwiper = null;
@@ -33,7 +33,7 @@ export const initSwiper = () => {
       slidesPerView: 1.2,
       spaceBetween: 13,
       grabCursor: true,
-      centeredSlides: false,
+      centeredSlides: true,
       loop: true,
       speed: 800,
       simulateTouch: true,
@@ -54,10 +54,9 @@ export const initSwiper = () => {
         1440: {
           slidesPerView: 2.5,
           spaceBetween: 20,
-          centeredSlides: false,
+          centeredSlides: true,
         },
       },
-
       on: {
         init(swiper) {
           updateProgressBar(swiper);
@@ -67,6 +66,7 @@ export const initSwiper = () => {
         },
       },
     });
+
   };
 
   initGallerySwiper();

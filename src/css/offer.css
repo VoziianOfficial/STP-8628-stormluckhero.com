@@ -34,17 +34,21 @@
 }
 
 .swiper-gallery {
-  overflow: visible;
+  position: relative;
+  overflow: hidden;
 }
 
 .swiper-wrapper {
   display: flex;
+  transition-property: transform;
   transition-timing-function: ease;
-  margin: 0 auto;
+  will-change: transform;
 }
 
 .swiper-slide {
-
+  flex-shrink: 0;
+  width: 85%;
+  /* по умолчанию: 1.2 слайда на мобилке */
   transition: opacity 0.5s ease;
 }
 
@@ -94,72 +98,79 @@
   }
 
   .swiper-navigation {
-    --swiper-theme-color: #ffffff;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     position: absolute;
     top: 50%;
     left: 0;
-    width: 1280px;
+    right: 0;
     transform: translateY(-50%);
-    padding: 0 10px;
     z-index: 10;
-    margin-left: 80px;
+    pointer-events: none;
   }
 
   .swiper-button-prev,
   .swiper-button-next {
+    background-color: var(--dark);
+    border: 2px solid var(--red);
+    border-radius: 100px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: all;
+    cursor: pointer;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    pointer-events: all;
     background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.4);
     border-radius: 50%;
-    width: 48px;
-    height: 48px;
+    width: 58px;
+    height: 58px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
   }
 
+  .swiper-button-prev {
+    margin-right: 120px;
+  }
 
 
+  .swiper-button-prev svg,
+  .swiper-button-next svg {
+    stroke: #fff;
+    width: 24px;
+    height: 24px;
+  }
 
-  .swiper-slide-active,
-  .swiper-slide-next {
-    opacity: 1;
-    visibility: visible;
-    margin-left: 0 !important;
+  .swiper-wrapper {
+    display: flex;
+    transition-property: transform;
+    will-change: transform;
+  }
+
+  .swiper-gallery {
+    max-width: calc(420px * 2.5 + 80px);
+    margin: 0 auto;
+    padding-left: 80px;
+    position: relative;
   }
 
   .swiper-slide {
     width: 420px !important;
     flex-shrink: 0;
-    opacity: 1;
-    visibility: visible;
   }
 
-  .swiper-wrapper {
-    width: 1000px !important;
-    margin-left: auto !important;
+  .swiper-button-prev svg path,
+  .swiper-button-next svg path {
+    stroke: #fff;
+    fill: none;
   }
-
-
-  .container {
-    max-width: none;
-    padding: 0;
-  }
-
-  .swiper-gallery {
-    padding-left: 80px;
-    /* а не 172px */
-    margin-left: 80px;
-    width: 1440px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    position: relative;
-  }
-
-  .swiper-img {
-    object-fit: cover;
-  }
-
 }
